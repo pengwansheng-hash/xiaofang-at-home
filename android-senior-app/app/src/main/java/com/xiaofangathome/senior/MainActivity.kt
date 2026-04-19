@@ -255,7 +255,6 @@ private fun SeniorAppRoot(
             composable(SeniorRoute.Home.route) {
                 HomeScreen(
                     state = state,
-                    onOpenSettings = { navController.navigate(SeniorRoute.Settings.route) },
                     onOpenCompanion = { navController.navigate(SeniorRoute.Companion.route) },
                     onOpenContacts = { navController.navigate(SeniorRoute.Contacts.route) },
                     onOpenReminders = { navController.navigate(SeniorRoute.Reminders.route) },
@@ -266,7 +265,6 @@ private fun SeniorAppRoot(
             composable(SeniorRoute.Reminders.route) {
                 RemindersScreen(
                     state = state,
-                    onOpenSettings = { navController.navigate(SeniorRoute.Settings.route) },
                     onOpenDetail = { reminderId ->
                         navController.navigate(SeniorRoute.ReminderDetail.createRoute(reminderId))
                     },
@@ -359,7 +357,6 @@ private fun SeniorAppRoot(
             composable(SeniorRoute.Contacts.route) {
                 ContactsScreenV2(
                     state = state,
-                    onOpenSettings = { navController.navigate(SeniorRoute.Settings.route) },
                     onSaveProfile = viewModel::savePreferenceProfile,
                     onDismissProfileNotice = viewModel::clearProfileNotice,
                     onStyleChange = viewModel::setCommunicationStyle,

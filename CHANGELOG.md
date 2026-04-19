@@ -494,3 +494,11 @@
 
 ### Fixed
 - 修复上一轮文件重建后老人端主页面视觉结构退回到简化骨架版、与前期确认版本不一致的问题。
+## 2026-04-19 Senior Main Screen Baseline Cleanup
+
+### Changed
+- 清理 SeniorScreens.kt 中首页、提醒、陪伴和家人与资料页在 V0V2 恢复后残留的不可达旧实现分支，保留当前生效页面结构不变。
+- 移除 MainActivity.kt 与 SeniorScreens.kt 里已经失效的 onOpenSettings 参数传递，收口主标签页改回旧版顶栏后的调用关系。
+
+### Fixed
+- 修复老人端主页面当前稳定版本虽可编译运行，但源码层仍混有多套历史实现、后续继续修改时容易再次串版本的问题。

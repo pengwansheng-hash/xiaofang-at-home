@@ -620,3 +620,8 @@ pm run build 输出 BUILD SUCCESSFUL。
   - 陪伴页已恢复为固定顶栏 + 气泡流 + 快捷回复 + 底部主输入区的大层级，语音和自动播报链路仍在。
   - 家人与资料页已恢复为称呼卡、沟通风格卡、联系人卡片和新增联系人区的旧版结构，保存资料与联系人增删链路未丢失。
 - 已知风险：当前 SeniorScreens.kt 为降低回退风险暂时保留了旧实现分支，因此编译阶段会有 unreachable code 警告；不影响本轮 APK 产出，但下一轮建议顺手清理死代码并补一轮真机视觉验收。
+## 2026-04-19 老人端主页面回退点整理验证
+- 范围：SeniorScreens.kt 首页 / 提醒 / 陪伴 / 家人与资料页的不可达旧分支清理，MainActivity.kt 对应无效参数收口，以及当前稳定版本 GitHub 回退点整理。
+- 方法：执行 ./gradlew.bat '-Pkotlin.incremental=false' compileDebugKotlin --no-daemon --console=plain、./gradlew.bat '-Pkotlin.incremental=false' assembleDebug --no-daemon --console=plain 与 ./gradlew.bat '-Pkotlin.incremental=false' testDebugUnitTest --no-daemon --console=plain，并核对 git diff 仅包含死代码删除、无效参数移除和文档更新。
+- 结果：三条命令均成功通过；SeniorScreens.kt 中 Home / Reminders / Companion / Contacts 四个主页面的历史不可达分支已清理，当前稳定版本已补齐 Git 提交、GitHub 远端与可回退 tag。
+- 结论：本轮不改变用户已确认的页面效果，只提升代码可维护性与版本可回退性；后续如需回退，可直接基于本轮 tag 或对应提交恢复。

@@ -350,3 +350,7 @@
 - `SEN-07J` 恢复家人与资料页到 `V0V2` 的资料卡 + 沟通风格 + 联系人卡片结构，保留当前新增联系人、删除联系人和保存资料功能，状态：已完成。
 - `QA-07I` 完成本轮四个主页面恢复后的 Android 单测、构建验证与真机视觉回归口径回填，状态：已完成。
 - 验证说明：首次构建命中 Kotlin / Gradle 增量缓存损坏，执行 `.\gradlew.bat --stop`、清理 `app/build/kotlin` 与 `app/build/tmp/kotlin-classes` 后，已通过 `.\gradlew.bat '-Pkotlin.incremental=false' assembleDebug --no-daemon --console=plain` 与 `.\gradlew.bat '-Pkotlin.incremental=false' testDebugUnitTest --no-daemon --console=plain` 完成回归。
+
+## 2026-04-19 老人端主页面回退点整理
+- `SEN-07K` 清理 `SeniorScreens.kt` 中首页、提醒、陪伴和资料页残留的不可达旧分支，并移除 `MainActivity.kt` / `SeniorScreens.kt` 里已经无效的 `onOpenSettings` 参数，状态：已完成。
+- `REL-07A` 为当前“V0V2 对齐”老人端稳定版本补齐 GitHub 回退点与 Git tag，状态：已完成。
