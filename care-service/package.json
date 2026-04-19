@@ -1,0 +1,15 @@
+{
+  "name": "xiaofang-care-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && npm run start",
+    "start": "node --experimental-vm-modules -e \"eval(require('fs').readFileSync('scripts/start-bootstrap.cjs', 'utf8'))\"",
+    "build": "node -e \"eval(require('fs').readFileSync('scripts/build-bootstrap.cjs', 'utf8'))\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

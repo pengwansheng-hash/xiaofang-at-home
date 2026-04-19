@@ -1,0 +1,412 @@
+{
+  "bindings": [
+    {
+      "bindingId": "binding-demo-01",
+      "seniorId": "senior-zhang",
+      "childId": "child-demo-01",
+      "relation": "daughter",
+      "bindingCode": "426318",
+      "bindingMethod": "manual",
+      "validationStatus": "pending_validation",
+      "notificationPreference": "important_only",
+      "boundAt": "2026-04-13T09:00:00+08:00",
+      "updatedAt": "2026-04-13T09:00:00+08:00"
+    }
+  ],
+  "profiles": [
+    {
+      "seniorId": "senior-zhang",
+      "preferredName": "张阿姨",
+      "relationLabel": "妈妈",
+      "interests": [
+        "早饭",
+        "花草",
+        "社区新鲜事"
+      ],
+      "hobbies": [
+        "阳台种花",
+        "晚饭后散步"
+      ],
+      "tabooTopics": [
+        "催促式提醒",
+        "沉重医疗猜测"
+      ],
+      "communicationStyle": "patient_gentle",
+      "routineSummary": "早上 7:30 起床，午饭前后容易忘记喝水，晚上 8 点后更愿意轻松聊天。",
+      "personaTags": [
+        "慢节奏",
+        "喜欢熟人感",
+        "需要低压提醒"
+      ],
+      "importantContacts": [
+        {
+          "id": "contact-01",
+          "name": "李女士",
+          "relation": "女儿",
+          "phone": "13800001234",
+          "priority": 1
+        },
+        {
+          "id": "contact-02",
+          "name": "王医生",
+          "relation": "社区医生",
+          "phone": "13800004567",
+          "priority": 2
+        }
+      ],
+      "updatedAt": "2026-04-13T09:00:00+08:00"
+    }
+  ],
+  "carePlans": [
+    {
+      "planId": "plan-01",
+      "seniorId": "senior-zhang",
+      "title": "午饭后喝水",
+      "schedule": "12:30",
+      "frequency": "daily",
+      "channel": "tts+ring",
+      "confirmRequired": true,
+      "source": "family_web",
+      "status": "active",
+      "updatedAt": "2026-04-13T09:00:00+08:00"
+    },
+    {
+      "planId": "plan-02",
+      "seniorId": "senior-zhang",
+      "title": "晚间降压药",
+      "schedule": "20:00",
+      "frequency": "daily",
+      "channel": "tts",
+      "confirmRequired": true,
+      "source": "senior_app",
+      "status": "active",
+      "updatedAt": "2026-04-13T09:00:00+08:00"
+    }
+  ],
+  "carePlanEvents": [],
+  "topicBriefs": [
+    {
+      "topicId": "topic-01",
+      "seniorId": "senior-zhang",
+      "title": "今天阳台适合给花松松土",
+      "summary": "结合她最近常聊花草和今天的轻松陪伴方向，先给一个生活化话题占位，而不是直接推新闻正文。",
+      "sourceName": "service_placeholder",
+      "sourceUrl": "",
+      "riskFlags": [],
+      "generatedAt": "2026-04-13T09:00:00+08:00"
+    }
+  ],
+  "semanticMemories": [
+    {
+      "seniorId": "senior-zhang",
+      "id": "emotion_1776263967110_0",
+      "memoryType": "Emotion",
+      "title": "新的情绪状态摘要",
+      "compressedSummary": "情绪：有点低落或孤单",
+      "keywords": [
+        "一个人",
+        "老人最近提到情绪：有点低落或孤单",
+        "老人",
+        "孤单",
+        "情绪：有点低落或孤单",
+        "情绪",
+        "我一个人住",
+        "我一",
+        "人住",
+        "儿子离我挺远的",
+        "儿子",
+        "远的"
+      ],
+      "sourceText": "我一个人住，儿子离我挺远的",
+      "confidence": 0.82,
+      "createdAt": 1776263967110,
+      "updatedAt": 1776520300109,
+      "sourceCount": 2,
+      "lastAccessedAt": 1776520354093
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "emotion_1776492620486_0",
+      "memoryType": "Emotion",
+      "title": "新的情绪状态摘要",
+      "compressedSummary": "情绪：心情比较轻松",
+      "keywords": [
+        "今天天气还不错",
+        "今天",
+        "不错",
+        "老人最近提到情绪：心情比较轻松",
+        "老人",
+        "轻松",
+        "情绪：心情比较轻松",
+        "情绪",
+        "今天天气不错"
+      ],
+      "sourceText": "今天天气不错",
+      "confidence": 0.82,
+      "createdAt": 1776492620486,
+      "updatedAt": 1776492790347,
+      "sourceCount": 2,
+      "lastAccessedAt": 1776520354093
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "event_1776506357700_0",
+      "memoryType": "Event",
+      "title": "新的生活事件摘要",
+      "compressedSummary": "事件：天气怎么样？",
+      "keywords": [
+        "今天成都的天气怎么样",
+        "今天",
+        "么样",
+        "老人提到的生活事件：天气怎么样",
+        "老人",
+        "事件：天气怎么样",
+        "事件"
+      ],
+      "sourceText": "今天成都的天气怎么样？",
+      "confidence": 0.7,
+      "createdAt": 1776506357700,
+      "updatedAt": 1776506357700,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776520354093
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "family_1776264474072_0",
+      "memoryType": "Family",
+      "title": "新的子女摘要",
+      "compressedSummary": "子女：儿子",
+      "keywords": [
+        "我现在有两个儿子",
+        "我现",
+        "儿子",
+        "一个在成都",
+        "一个",
+        "成都",
+        "一个在上海",
+        "上海",
+        "他们都很少回来",
+        "他们",
+        "回来",
+        "老人提到的子女情况：儿子"
+      ],
+      "sourceText": "我现在有两个儿子，一个在成都，一个在上海，他们都很少回来",
+      "confidence": 0.78,
+      "createdAt": 1776264474072,
+      "updatedAt": 1776264474072,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776520300109
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "family_1776486482005_0",
+      "memoryType": "Family",
+      "title": "新的子女摘要",
+      "compressedSummary": "子女：儿子说的",
+      "keywords": [
+        "我听我儿子说的",
+        "我听",
+        "说的",
+        "老人提到的子女情况：儿子说的",
+        "老人",
+        "子女：儿子说的",
+        "子女"
+      ],
+      "sourceText": "我听我儿子说的",
+      "confidence": 0.78,
+      "createdAt": 1776486482005,
+      "updatedAt": 1776486482005,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776520300109
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "profile_1776520300109_1",
+      "memoryType": "Profile",
+      "title": "新的基本情况摘要",
+      "compressedSummary": "基本情况：一个人住",
+      "keywords": [
+        "我一个人住",
+        "我一",
+        "人住",
+        "儿子离我挺远的",
+        "儿子",
+        "远的",
+        "老人提到的基本情况：一个人住",
+        "老人",
+        "基本情况：一个人住",
+        "基本"
+      ],
+      "sourceText": "我一个人住，儿子离我挺远的",
+      "confidence": 0.78,
+      "createdAt": 1776520300109,
+      "updatedAt": 1776520300109,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776520300109
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "family_1776520300109_2",
+      "memoryType": "Family",
+      "title": "新的子女摘要",
+      "compressedSummary": "子女：儿子离我挺远的",
+      "keywords": [
+        "我一个人住",
+        "我一",
+        "人住",
+        "儿子离我挺远的",
+        "儿子",
+        "远的",
+        "老人提到的子女情况：儿子离我挺远的",
+        "老人",
+        "子女：儿子离我挺远的",
+        "子女"
+      ],
+      "sourceText": "我一个人住，儿子离我挺远的",
+      "confidence": 0.78,
+      "createdAt": 1776520300109,
+      "updatedAt": 1776520300109,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776520300109
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "emotion_1776497592396_1",
+      "memoryType": "Emotion",
+      "title": "新的情绪状态摘要",
+      "compressedSummary": "情绪：身体有点不舒服",
+      "keywords": [
+        "晒得我头疼",
+        "晒得",
+        "头疼",
+        "老人最近提到情绪：身体有点不舒服",
+        "老人",
+        "舒服",
+        "情绪：身体有点不舒服",
+        "情绪"
+      ],
+      "sourceText": "晒得我头疼",
+      "confidence": 0.82,
+      "createdAt": 1776497592396,
+      "updatedAt": 1776497592396,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776520254653
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "event_1776492620486_1",
+      "memoryType": "Event",
+      "title": "新的生活事件摘要",
+      "compressedSummary": "事件：天气还不错",
+      "keywords": [
+        "今天天气还不错",
+        "今天",
+        "不错",
+        "老人提到的生活事件：天气还不错",
+        "老人",
+        "事件：天气还不错",
+        "事件"
+      ],
+      "sourceText": "今天天气还不错",
+      "confidence": 0.7,
+      "createdAt": 1776492620486,
+      "updatedAt": 1776492620486,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776520004509
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "health_1776497592396_0",
+      "memoryType": "Health",
+      "title": "新的身体状态摘要",
+      "compressedSummary": "身体：疼",
+      "keywords": [
+        "晒得我头疼",
+        "晒得",
+        "头疼",
+        "老人提到身体状态：疼",
+        "老人",
+        "：疼",
+        "身体：疼"
+      ],
+      "sourceText": "晒得我头疼",
+      "confidence": 0.86,
+      "createdAt": 1776497592396,
+      "updatedAt": 1776497592396,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776497592396
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "event_1776492790347_1",
+      "memoryType": "Event",
+      "title": "新的生活事件摘要",
+      "compressedSummary": "事件：天气不错",
+      "keywords": [
+        "今天天气不错",
+        "今天",
+        "不错",
+        "老人提到的生活事件：天气不错",
+        "老人",
+        "事件：天气不错",
+        "事件"
+      ],
+      "sourceText": "今天天气不错",
+      "confidence": 0.7,
+      "createdAt": 1776492790347,
+      "updatedAt": 1776492790347,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776492790347
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "routine_1776486738866_0",
+      "memoryType": "Routine",
+      "title": "新的作息摘要",
+      "compressedSummary": "作息：晚上都在加班",
+      "keywords": [
+        "忙得很",
+        "经常晚上都在加班",
+        "经常",
+        "加班",
+        "还有点掉头发",
+        "还有",
+        "头发",
+        "老人提到的作息或日常安排：晚上都在加班",
+        "老人",
+        "作息：晚上都在加班",
+        "作息"
+      ],
+      "sourceText": "忙得很，经常晚上都在加班,还有点掉头发",
+      "confidence": 0.75,
+      "createdAt": 1776486738866,
+      "updatedAt": 1776486738866,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776486738866
+    },
+    {
+      "seniorId": "senior-zhang",
+      "id": "experience_1776486580105_0",
+      "memoryType": "Experience",
+      "title": "新的经历摘要",
+      "compressedSummary": "经历：上班",
+      "keywords": [
+        "他是在一家it公司上班",
+        "他是",
+        "上班",
+        "他是公司的老总哦",
+        "总哦",
+        "老人提到的人生经历：上班",
+        "老人",
+        "经历：上班",
+        "经历"
+      ],
+      "sourceText": "他是在一家it公司上班,他是公司的老总哦",
+      "confidence": 0.77,
+      "createdAt": 1776486580105,
+      "updatedAt": 1776486580105,
+      "sourceCount": 1,
+      "lastAccessedAt": 1776486580105
+    }
+  ]
+}
